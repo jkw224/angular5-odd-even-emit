@@ -1,9 +1,8 @@
 # ng5-odd-even-emit
 Parent/Child component communication: @Inputs and @Outputs/EventEmitter
 
-Emit odd and even numbers via EventEmitter in parent component (app.component). 
+Emit odd and even numbers via EventEmitter in parent component (app.component). On odd and even numbers emitted:
 
-On odd and even numbers emitted:
   - Add odd numbers to OddNumberArray.
     Display odd numbers via odd.component (child component).
   - Add even number to EvenNumberArray.
