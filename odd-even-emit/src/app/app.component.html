@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid app-container p-4">
+    <div class="row">
+        <div class="col mr-3 ml-3">
+            <div class="">
+                <h1>Even-Odd Emit</h1>
+            </div>
+            <div class="col-12 mt-3">
+                <app-game-control
+                    (intervalEmitted)="onEventEmitted($event)"
+                    [oddNumArray]="oddNumberArray"
+                    (resetOddArrayEmitted)="onResetOddArrayEmitted($event)"
+                    [evenNumArray]="evenNumberArray"
+                    (resetEvenArrayEmitted)="onResetEvenArrayEmitted($event)">
+                    </app-game-control>
+            </div>
+        </div>
+        <div class="col-12 mr-3 ml-3 mt-5">
+            <div class="col mr-3 ml-3" *ngFor="let odd of oddNumberArray">
+                <app-odd [number]="odd"></app-odd>
+            </div>
+            <div class="col mr-3 ml-3" *ngFor="let even of evenNumberArray">
+                    <app-even [number]="even"></app-even>
+            </div>
+        </div>
+        <!-- <div class="col-12 mr-3 ml-3 mt-5">
+            <div *ngIf="numberEmitted % 2 !== 0 && numberEmitted !== 0;">
+                <div class="col mr-3 ml-3">
+                    <app-odd [number]="numberEmitted"></app-odd>
+                </div>
+            </div>
+            <div *ngIf="numberEmitted % 2 === 0 && numberEmitted !== 0;">
+                <div class="col mr-3 ml-3">
+                    <app-even [number]="numberEmitted"></app-even>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
