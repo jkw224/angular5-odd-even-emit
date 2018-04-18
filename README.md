@@ -3,7 +3,7 @@ Parent/Child component communication: @Inputs and @Outputs/EventEmitter
 
 Emit odd and even numbers via EventEmitter in parent component (app.component). On odd and even numbers emitted:
 
-  - Add odd numbers to OddNumberArray.
-    Display odd numbers via odd.component (child component).
-  - Add even number to EvenNumberArray.
-    Display even numbers via even.component (child component).
+  - Add odd numbers to oddNumbersArray.
+    Display odd numbers via child component (odd.component).
+  - Add even number to evenNumbersArray.
+    Display even numbers via child component (even.component).
